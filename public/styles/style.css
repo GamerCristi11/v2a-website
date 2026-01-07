@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+h1,h2,h3,h4,h5,h6 { 
+    font-family: "Assistant", sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', system-ui;
+    font-size: 15px;
+}
+
+a {
+    font-family: 'Open Sans', system-ui;
+    font-weight: bold;
+}
+
+pre,p,h1,h2,h3,h4,h5,h6 {
+    color: white;
+ }
+
+ pre {
+    font-family: 'Courier New', monospace;
+    color: white;
+}
+
+ body {
+  background-image: url('/media/gifs/stars.gif');
+}
+
+a {
+  color:lightblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+dialog {
+  width: 55%;
+  max-width: 70%;
+  background-color: black;
+  border-color: white;
+  border-style: dashed;
+}
+
+li {
+    color: white;
+}
+
+.bigthing {
+  display: flex;
+  gap: 13px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 14px auto;
+}
+
+.side {
+  flex: 0.80;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 8px;
+  border-style: dashed;
+  border-color: #ffffff;
+}
+.mainthing {
+  flex: 3.20;
+  background-color: #111;
+  padding: 10px;
+  border-radius: 8px;
+  border-style: dashed;
+  border-color: #ffffff;
+}
+
+.footer {
+  text-align: center;
+}

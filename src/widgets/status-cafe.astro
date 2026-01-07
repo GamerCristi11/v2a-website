@@ -1,0 +1,36 @@
+<div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div>
+<script>
+fetch("https://status.cafe/users/code2craft/status.json")
+  .then( r => r.json() )
+  .then( r => {
+    if (!r.content.length) {
+      document.getElementById("statuscafe-content").innerHTML = "No status yet."
+      return
+    }
+    document.getElementById("statuscafe-username").innerHTML =   `<p class="sc-up">My Status: <a href="https://status.cafe/users/code2craft" target="_blank" class="sc-link">${r.face} ${r.timeAgo}</a></p>`
+    document.getElementById("statuscafe-content").innerHTML =  `<p class="sc-content">${r.content}</p>`
+  })
+</script>
+      <style>
+#statuscafe {
+    background-color: #343333;
+    padding: 6px;
+    width: fit-content;
+    border-color: white;
+    border-style: dashed;
+    border-radius: 10px;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+    color:white;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+    color: white;
+}
+
+.sc-content{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+}
+</style>
