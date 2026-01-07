@@ -2,7 +2,7 @@ name: Build & Deploy Astro Site
 
 on:
   push:
-    branches: [ main ]   # or dev, whichever you use
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -30,7 +30,7 @@ jobs:
         run: npm run build
 
       - name: Upload artifact for Pages
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: 'dist/'
 
