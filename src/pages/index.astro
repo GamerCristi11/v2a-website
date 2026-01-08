@@ -15,16 +15,41 @@ import WebBt from "../widgets/website-buttons.astro"
    <h2>About Me</h2>
             <img src="/media/gifs/catblinkie.gif" alt="cat blinkie" width="150" height="20">
             <p>Hi, Im Cris(aka Code2Craft) and this is my corner on the <strong>BIG</strong> World Wide Web. I like learning and coding in HTML and CSS, rarely coding in Python and Javascript. Also, I'm Romanian <img src="/media/gifs/roflag.gif" aria-label="romanian flag" height="13px" width="auto"></p>
-			<div class="discords-scw">
+			<div class="linething">
 				<Discords />
 				<Scw />
 			</div>
+      <br>
+      <div class="linething1">
 			  <UpdateLogs />
+                            <div class="buttons">
+                    <h3 style="text-align: center;">My Buttons:</h3>
+                                <a href="https://code2craft.xyz"><img src="/media/buttons/b1.png" alt="Code2Craft dot xyz"></a>
+            <textarea readonly><a href="https://code2craft.xyz" target="_blank"><img src="https://code2craft.xyz/media/buttons/b1.png" alt="Code2Craft dot xyz"></a></textarea>
+            <br>
+            <a href="https://code2craft.xyz"><img src="/media/buttons/b2.png" alt="Code2Craft dot xyz"></a>
+            <textarea readonly><a href="https://code2craft.xyz" target="_blank"><img src="https://code2craft.xyz/media/buttons/b2.png" alt="Code2Craft dot xyz"></a></textarea>
+            </div>
+      <div>
 			<style>
-.discords-scw {
+.linething {
     display: flex; 
     gap: 20px;  
 }
+.linething1 {
+    display: flex; 
+    gap: 20px;  
+}
+.buttons{
+      background-color: #343333;
+    padding: 6px;
+    width: fit-content;
+    border-color: white;
+    border-style: dashed;
+    border-radius: 10px;
+}
+
+
 </style>
   </div>
 </Layout>
