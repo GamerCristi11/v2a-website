@@ -65,18 +65,53 @@ li {
   border-radius: 8px;
 }
 .mainthing {
-  flex: 2.75;
+  flex: 2.50;
   background-color: #111;
   padding: 10px;
   border-radius: 8px;
 }
 
 .side1 {
-  flex: 0.75;
-  padding: 10px;
+  flex: 1;
+  padding: 6px;
   border-radius: 8px;
 }
 
 .footer {
   text-align: center;
+}
+
+.thing1 {
+    background-color: #343333;
+    padding: 6px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.thing{
+  background-color: #222;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 25px;
+}
+
+#statuscafe {
+  background-color: #222;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 25px;
+
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+    color:white;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+    color: white;
+}
+
+.sc-content{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
 }

@@ -1,0 +1,31 @@
+<p id="listening">Loading...</p>
+<script>
+const BASE_URL = 'https://lastfm-last-played.biancarosa.com.br/crisc2c/latest-song';
+
+const lastfmthing = async () => {
+    try {
+    const request = await fetch(BASE_URL);
+    const json = await request.json();
+
+    let isPlaying = json.track['@attr']?.nowplaying === "true";
+
+    let title = json.track.name || "Unknown Title";
+    let artist = json.track.artist['#text'] || "Unknown Artist";
+
+
+
+        document.getElementById("listening").textContent =
+            (isPlaying ? "Now listening: " : "Last listened: ") + title + " - " + artist;
+
+    } catch (err) {
+        console.error(err);
+        document.getElementById("listening").textContent = "Could not load track";
+    }
+};
+
+
+lastfmthing();
+setInterval(lastfmthing, 10000);
+</script>
+
+
