@@ -1,7 +1,10 @@
+---
+const { pt } = Astro.props;
+---
 <!DOCTYPE html>
 <html>
     <head>
-        <title>C2C | Home</title>
+        <title>C2C | {pt}</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Cris(aka Code2Craft)'s small corner on the web!">
@@ -11,21 +14,18 @@
         <script src="/otherfiles/1.js" defer></script>
     </head>
     <body>
-    <div class="announcement">
-    <slot name="ann"/ >
-    </div>
         <div class="container">
-            <div class="side">
+            <div class="side2">
+            <div class="links">
+<a href="/">Go Home</a><br><br>
+<a href="/posts/test">This Is A TestPost</a><br>
+</div>
                 <slot name="side" />
         
           </div>
 
-        <div class="big">
+        <div class="big1">
             <slot name="big" />
           </div>
-
-        <div class="side1">
-        <slot name="side1" />
-        </div>
     </body>
 </html>

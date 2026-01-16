@@ -4,9 +4,20 @@ import Layout from "../layouts/layout.astro"
 import B1 from "../widgets/website-buttons.astro"
 import B2 from "../widgets/website-buttons1.astro"
 ---
-<Layout title="C2C - 404">
-    <div slot="big">
-        <marquee scrollamount="6" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();" direction="right" class="buttonsm">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C2C-404</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cris(aka Code2Craft)'s small corner on the web!">
+        <meta name="robots" content="noai, noimageai">
+        <link rel="stylesheet" type="text/css" href="/styles/style.css">
+        <link href="/media/img/icon.png" rel="icon" type="image/x-icon" />
+        <script src="/otherfiles/1.js" defer></script>
+    </head>
+    <body>
+                <marquee scrollamount="6" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();" direction="right" class="buttonsm">
             <Wb />
         </marquee>
         <h1>404 - Page Not Found</h1>
@@ -14,10 +25,6 @@ import B2 from "../widgets/website-buttons1.astro"
         <a href="/">Go back home</a>
         <br>
         <br>
-        <marquee scrollamount="6" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();" direction="left" class="buttonsm">
-            <Wb />
-        </marquee>
-        <br>
-        <br>
-    </div>
-</Layout>
+        <marquee scrollamount="6" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();" direction="left" class="buttonsm"> <Wb /> </marquee>
+    </body>
+</html>

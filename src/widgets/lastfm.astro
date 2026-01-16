@@ -1,4 +1,4 @@
-<p id="listening">Loading...</p>
+  <p id="listening">Loading...</p>
 <script>
 const BASE_URL = 'https://lastfm-last-played.biancarosa.com.br/crisc2c/latest-song';
 
@@ -22,10 +22,6 @@ const lastfmthing = async () => {
         document.getElementById("listening").textContent = "Could not load track";
     }
 };
-
-
 lastfmthing();
 setInterval(lastfmthing, 10000);
 </script>
-
-

@@ -1,32 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+body,html {
+    font-size: 12px;
+    color: white;
+    font-family: 'Open Sans', system-ui;
+    font-weight: bold;
+    background-color: black;
+}
 
 h1,h2,h3,h4,h5,h6 { 
     font-family: "Assistant", sans-serif;
-}
-
-p {
-    font-family: 'Open Sans', system-ui;
-    font-size: 15px;
-}
-
-a {
-    font-family: 'Open Sans', system-ui;
-    font-weight: bold;
-}
-
-pre,p,h1,h2,h3,h4,h5,h6 {
-    color: white;
- }
-
- pre {
-    font-family: 'Courier New', monospace;
-    color: white;
-}
-
- body {
-  background-image: url('/media/gifs/stars.gif');
 }
 
 a {
@@ -38,80 +22,61 @@ a:hover {
   text-decoration: underline;
 }
 
-dialog {
-  width: 55%;
-  max-width: 70%;
-  background-color: black;
-  border-color: white;
-  border-style: dashed;
-}
-
-li {
-    color: white;
-}
-
-.bigthing {
-  display: flex;
-  width: 90%;
-  max-width: 1200px;
-  margin: 14px auto;
-  min-height: 100vh;
+.container {
+    display: flex;
+    align-items: center;
 }
 
 .side {
-  flex: 0.50;
-  background-color: #222;
-  padding: 10px;
-  border-radius: 8px;
+    flex: 1;
 }
-.mainthing {
-  flex: 2.50;
-  background-color: #111;
-  padding: 10px;
-  border-radius: 8px;
+
+.big {
+    flex: 3;
 }
 
 .side1 {
-  flex: 1;
-  padding: 6px;
-  border-radius: 8px;
-}
-
-.footer {
-  text-align: center;
-}
-
-.thing1 {
-    background-color: #343333;
-    padding: 6px;
-    width: fit-content;
-    border-radius: 10px;
-}
-
-.thing{
-  background-color: #222;
-  padding: 10px;
-  border-radius: 8px;
-  margin: 25px;
-}
-
-#statuscafe {
-  background-color: #222;
-  padding: 10px;
-  border-radius: 8px;
-  margin: 25px;
+    flex: 1;
 
 }
-#statuscafe-username {
-    margin-bottom: .5em;
-    color:white;
+
+.side , .big , .side1 {
+    border: 1px solid white;
+    min-height: 100vh;
 }
-#statuscafe-content {
-    margin: 0 1em 0.5em 1em;
+
+
+.item {
+    border: 1px solid white;
+}
+
+hr {
+    line-height: 1px;
     color: white;
 }
 
-.sc-content{
-    font-family: 'Roboto Mono', monospace;
+.scroll1 {
+    max-height: 82vh;
+    overflow-y:auto;
+    padding-left: 5px;
+}
+
+.big1 {
+    flex: 3.5;
+}
+
+.side2 {
+    flex: 0.5;
+
+}
+
+.side2 , .big1 {
+    border: 1px solid white;
+    min-height: 100vh;
+    max-height:100vh;
+    overflow-y:auto;
+}
+
+.links {
     font-size: 14px;
 }
