@@ -112,3 +112,11 @@ hr {
     word-break: break-word;
 }
 }
+
+
+.tamanotchis {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 10px;
+}
