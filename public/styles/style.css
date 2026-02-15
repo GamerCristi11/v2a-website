@@ -35,12 +35,8 @@ a:hover {
     flex: 3;
 }
 
-.side1 {
-    flex: 1;
 
-}
-
-.side , .big , .side1 {
+.side , .big {
     border: 1px solid white;
     min-height: 100vh;
 }
@@ -62,12 +58,6 @@ hr {
 }
 
 
-.side2 , .big1 {
-    border: 1px solid white;
-    min-height: 100vh;
-    max-height:100vh;
-    overflow-y:auto;
-}
 
 .links {
     font-size: 14px;
@@ -79,30 +69,11 @@ hr {
         align-items: stretch;
     }
 
-.side,.big,.side1 {
+.side,.big {
         width: 100%;
         min-height: auto;
     }
 
-.side2,.big1 {
-        width: 100%;
-        min-height: auto;
-        max-height: none;
-        overflow-y: visible;
-    }
-
-    .scroll1 {
-        max-height: none;
-        overflow-y: visible;
-    }
-
-    body, html {
-        font-size: 16px;
-    }
-    pre {
-    white-space: pre-wrap;
-    word-break: break-word;
-}
 }
 
 
@@ -111,4 +82,9 @@ hr {
     flex-wrap: wrap;
     gap: 20px;
     margin-left: 10px;
+}
+
+.neighbors {
+    border: 1px solid white;
+    padding: 10px;
 }

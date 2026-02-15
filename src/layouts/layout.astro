@@ -11,9 +11,6 @@
         <script src="/otherfiles/1.js" defer></script>
     </head>
     <body>
-    <div class="announcement">
-    <slot name="ann"/ >
-    </div>
         <div class="container">
             <div class="side">
                 <slot name="side" />
@@ -23,9 +20,9 @@
         <div class="big">
             <slot name="big" />
           </div>
-
-        <div class="side1">
-        <slot name="side1" />
-        </div>
+    </div>
+        <div class="neighbors">
+    <slot name="neighbors"/ >
+    </div>
     </body>
 </html>

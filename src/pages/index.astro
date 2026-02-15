@@ -1,23 +1,13 @@
 ---
 import Layout from "../layouts/layout.astro"
 import Wb from "../widgets/wb.astro"
-import UpdateLogs from "../widgets/updatelogs.astro"
 import Lf from "../widgets/lastfm.astro"
 import Sc from "../widgets/statuscafe.astro"
 import Ds from "../widgets/discords.astro"
 ---
 
 <Layout>
-<div slot="ann">
-<h2 style="text-align: center;">Website is still Work In Progress</h2>
-</div>
   <div slot="side">
-  <a href="https://hackclub.com" target="_blank">
-  <img src="https://assets.hackclub.com/flag-standalone.svg"
-       alt="Hack Club"
-       style="max-width: 120px;">
-</a>
-  <hr>
   <Lf />
 <hr>
 <Ds />
@@ -27,6 +17,8 @@ import Ds from "../widgets/discords.astro"
         <pre><a href="https://webring.nomaakip.xyz/webring?name=code2craft&to=prev"><-- Previous</a>   <a href="https://webring.nomaakip.xyz">Swagring</a>   <a href="https://webring.nomaakip.xyz/webring?name=code2craft&to=next">Next --></a></pre>
         <pre><a href="https://baccyflap.com/noai/?prv&s=ctc"><-- Previous</a>   <a href="https://baccyflap.com/noai">No AI Webring</a>   <a href="https://baccyflap.com/noai/?rnd">Random</a>   <a href="https://baccyflap.com/noai/?nxt&s=ctc">Next --></a></pre>
         <pre><a href="https://webring.bucketfish.me/redirect.html?to=prev&name=code2craft"><-- Previous</a>   <a href="https://webring.bucketfish.me">Bucket Webring</a>   <a href="https://webring.bucketfish.me/redirect.html?to=random&name=code2craft">Random</a>   <a href="https://webring.bucketfish.me/redirect.html?to=next&name=code2craft">Next --></a></pre>
+        <pre><a href="https://webring.hackclub.com/"id="previousBtn" title="Previous">‹--</a>   <a href="https://webring.hackclub.com/" title="Hack Club Webring" alt="Hack Club Webring">HackClub Webring</a>   <a href="https://webring.hackclub.com/" id="nextBtn" title="Next">--></a></pre>
+        <script src="https://cdn.jsdelivr.net/gh/hackclub/webring@d8004260e67f17633af5a64b05ac17ff871a509f/public/embed.min.js"></script>
         <a href="/webrings" target="_blank">See All Webrings</a>
   <hr>
   <h2>My Pets: </h2>
@@ -44,13 +36,18 @@ import Ds from "../widgets/discords.astro"
   <hr>
   <script type="text/javascript" src="https://counter.websiteout.com/js/2/7/0/0"></script>
   <hr>
-  <h4>I(Code2Craft.xyz) am not affiliated with Code2Craft.com, Code2Craft Solutions, Code2Craft AI or any other company with a similar name in any way.</h4>
+  <a href="/boring-stuff">Boring legal stuff</a>
+            <footer>
+                <p id="footer" class="footer">© year Code2Craft.xyz</p>
+            </footer>
+            <script>
+              const currentYear = new Date().getFullYear();
+              document.getElementById('footer').textContent = `©${currentYear} Code2Craft.xyz`;
+            </script>
   </div>
     <div slot="big">
-    <marquee scrollamount="6" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();" direction="right" style="margin-top: 5px;"><Wb /></marquee>
-    <hr>
     <p>
-    <a href="https://code2craft.atabook.org/" target="_blank">GuestBook</a> | <a href="/buttons" target="_blank">Buttons From Other Websites</a>
+    <a href="https://code2craft.atabook.org/">GuestBook</a> | <a href="/ulogs">Update Logs</a></p>
     <hr>
     <div class="scroll1">
     <h2>About Me <span id="swatchClock" style="font-weight: normal;font-size:12px">@000</span></h2>
@@ -65,7 +62,7 @@ import Ds from "../widgets/discords.astro"
                 <h3>Find me on: <a href="https://discord.gg/yaqzbDBaAA">Dimden's Hotel Discord Server</a><br>
                 <a href="https://discord.gg/hvfHKyVS6b">Nekoweb Discord Server</a></h3>
                 <br>
-                <h3 style="text-align: center; ">My Buttons:</h3>
+                <h2>My Buttons:</h2>
                 <a href="https://code2craft.xyz"><img src="/media/buttons/b1.png" alt="Code2Craft dot xyz"></a>
                 <textarea readonly><a href="https://code2craft.xyz" target="_blank"><img src="https://code2craft.xyz/media/buttons/b1.png" alt="Code2Craft dot xyz"></a></textarea>
                 <br>
@@ -74,12 +71,8 @@ import Ds from "../widgets/discords.astro"
     
   </div>
   </div>
-    <div slot="side1">
-                    <div class="thing">
-  <iframe src="https://www5.cbox.ws/box/?boxid=960653&boxtag=Sk1Das" height="175" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+  <div slot="neighbors">
+  <h1 style="text-align: center;">Neighbors</h1>
+  <Wb />
   </div>
-  <hr>
-  <UpdateLogs />
-  </div>
-  <hr>
 </Layout>
